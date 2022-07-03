@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@1,300&family=Tapestry&display=swap");
 body {
   background-color: #f1b0fa;
+  padding-top: 55px;
 }
 
 header {
@@ -11,6 +12,9 @@ header {
 /* Navbar */
 .fondo-nav {
   background-image: linear-gradient(to right, #845EC2, #c8b3e9);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .nav-font {
@@ -35,10 +39,9 @@ header {
 
 .social {
   display: flex;
-  flex-direction: column;
-  align-self: flex-start;
+  flex-direction: row;
+  align-self: flex-end;
   height: auto;
-  position: fixed;
   font-size: 30px;
   text-shadow: none;
   z-index: 1;
@@ -47,7 +50,7 @@ header {
   padding: 6px;
 }
 .social a {
-  color: beige;
+  color: rgb(251, 251, 237);
 }
 .social a:hover {
   color: rgb(49, 49, 239);
@@ -61,7 +64,7 @@ h3 {
   font-size: 30px;
   color: #FEFEDF;
   padding: 20px;
-  text-shadow: 2px 2px #ccc;
+  text-shadow: 2px 2px rgb(65, 65, 65);
 }
 
 .containerindex {
@@ -108,6 +111,10 @@ h3 {
 
 .accordion {
   grid-area: accordion;
+}
+
+.accordion-button {
+  position: static;
 }
 
 .text1 {
@@ -162,6 +169,23 @@ section div img {
   border: solid 2px black;
   padding: 20px;
   line-height: 30px;
+}
+
+.card {
+  width: 24%;
+  margin: 3px;
+  position: static;
+  padding-top: 12px;
+}
+
+.cards {
+  justify-content: space-evenly;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Form */
@@ -224,23 +248,41 @@ section form {
 .form-flex {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 /* Blog begins */
 .blogtext {
-  background-color: rgba(245, 207, 240, 0.74);
-  border-style: dotted;
+  background-color: rgba(251, 227, 248, 0.74);
+  border-bottom: solid white 32px;
 }
 
 .blogp {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: justify;
+  text-align: left;
   line-height: 30px;
   padding: 6px;
 }
 
+.blogp1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: right;
+  padding: 6px;
+  line-height: 30px;
+}
+
 .blogh4 {
   font-family: "Acme", sans-serif;
+  text-align: left;
+  color: rgb(94, 25, 159);
+  font-size: 28px;
+  padding: 24px;
+  margin: 0;
+}
+
+.blogh41 {
+  font-family: "Acme", sans-serif;
+  text-align: right;
   color: rgb(94, 25, 159);
   font-size: 28px;
   padding: 24px;
@@ -252,10 +294,14 @@ section form {
   justify-content: center;
 }
 
+.blogform {
+  margin-left: 30px;
+}
+
 .essentialsintro {
   background-color: #FEFEDF;
   min-height: 100px;
-  font-size: 30px;
+  font-size: 24px;
   font-family: var(--bs-font-sans-serif);
   text-align: center;
   border: 4px solid #520567;
@@ -306,6 +352,21 @@ section form {
 
 .dangerous {
   background-color: rgb(255, 134, 134);
+}
+
+.carousel {
+  width: 100%;
+  padding: 0;
+}
+
+.w-100 {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(125, 125, 125, 0.526);
 }
 
 /* Footer begins */
